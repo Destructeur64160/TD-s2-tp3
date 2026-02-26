@@ -11,21 +11,27 @@ int** allouer(int taille);
 /* Auteur : Kevin Jean-Paul Philippe Jallet */
 /* Date : 25/02/2026 */
 /* Résumé : permet d'initialiser toute la grille a -1 */
-/* Entrées : magrille un tableau 2D d'entier dynamique et taille un entier */
-void initialiser(int** maGrille, int taille);
+/* Entrées : grille un tableau 2D d'entier dynamique et taille un entier */
+void initialiser(int** grille, int taille);
 
 /* Auteur : Kevin Jean-Paul Philippe Jallet */
 /* Date : 25/02/2026 */
-/* Résumé : procédure qui permet d'afficher magrille */
-/* Entrées : magrille un tableau 2D d'entier dynamique et taille un entier */
-void afficher(int** maGrille, int taille);
+/* Résumé : procédure qui permet d'afficher grille */
+/* Entrées : grille un tableau 2D d'entier dynamique et taille un entier */
+void afficher(int** grille, int taille);
 
 /* Auteur : Kevin Jean-Paul Philippe Jallet */
 /* Date : 25/02/2026 */
 /* Résumé : procédure qui vérifie la saisie du joueur,
- si la saisie est juste on place le pion sinon on lui redemande*/
-/* Entrées : maGrille un taleau 2D d'entier dynamique, taille un entier et joueur un entier*/
-void jouer(int** maGrille, int taille, int joueur);
+ si la saisie est juste on place le pion sinon on lui redemande */
+/* Entrées : grille un taleau 2D d'entier dynamique, taille un entier et joueur un entier*/
+void jouer(int** grille, int taille, int joueur);
 
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 26/02/2026 */
+/* Résumé : fonction qui verifie si une ligne de 4 pions identiques a été entré dans la grille */
+/* Entrées : grille matrice dynamique, joueur un entier, ligne(la ligne a vérifié) et taille un entier (la taille de la grille) */
+/* Sortie : 1(True) ou 0(False) si la ligne et oui ou non verifié */
+int VerificationLignes(int** grille, int ligne, int joueur, int taille);
 
 #endif
