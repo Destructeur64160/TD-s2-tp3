@@ -5,12 +5,15 @@
 int N;
 
 int main() {
+    int** grille;
+    int joueur=1;
     printf("C'est le puissance 4 ! \n");
     N=7;
     printf("valeur de N: %d\n", N);
-    int** grille;
     grille = allouer(N);
     initialiser(grille, N);
+    afficher(grille,N);
+    jouer(grille, N, joueur);
     afficher(grille,N);
     return 0;
 }
