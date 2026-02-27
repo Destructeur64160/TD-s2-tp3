@@ -34,4 +34,32 @@ void jouer(int** grille, int taille, int joueur);
 /* Sortie : 1(True) ou 0(False) si la ligne et oui ou non verifié */
 int VerificationLignes(int** grille, int ligne, int joueur, int taille);
 
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 27/02/2026 */
+/* Résumé : fonction qui verifie si une colonne de 4 pions identiques a été entré dans la grille */
+/* Entrées : grille matrice dynamique, joueur un entier, colone(la colone a vérifié) et taille un entier (la taille de la grille) */
+/* Sortie : 1(True) ou 0(False) si la colonne et oui ou non verifié */
+int VerificationColonnes(int** grille, int colonne, int joueur, int taille);
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 27/02/2026 */
+/* Résumé : fonction qui verifie si dans les diagonale de haut gauche vers bas droit de 4 pion a été rentré dans la grille */
+/* Entrées : grille matrice dynamique, joueur un entier et taille ( la taille de la grille ) */
+/* Sortie : 1(True) ou 0(False) pour savoir si la diagonale est verifié */
+int Verificationdiag1(int** grille, int joueur, int taille);
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 27/02/2026 */
+/* Résumé : fonction qui verifie si dans les diagonales de bas gauche vers haut droit de 4 pion a été rentré dans la grille */
+/* Entrées : grille matrice dynamique, joueur un entier et taille ( la taille de la grile ) */
+/* Sortie : 1(True) ou 0(False) pour savoir si la diagonale est vérifié */
+int Verificationdiag2(int** grille, int joueur, int taille);
+
+/* Auteur : Kevin Jean-Paul Philippe Jallet */
+/* Date : 27/02/2026 */
+/* Résumé : fonction qui verifie si un joueur a gagné sur une des lignes, colonne ou diagonale */
+/* Entrées : grille matrice dynamique, taille(la taille de la grille) */
+/* Sortie : 1(True) ou 0(False) en fonction de si un joueur a gagné */
+int aGagne(int** grille, int taille);
+
 #endif
