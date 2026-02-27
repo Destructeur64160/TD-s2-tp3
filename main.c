@@ -13,7 +13,9 @@ int main() {
     grille = allouer(N);
     initialiser(grille, N);
     afficher(grille,N);
-    jouer(grille, N, joueur);
-    afficher(grille,N);
+    while(Verificationdiag1(grille, joueur, N)==0 && Verificationdiag2(grille, joueur, N)==0){
+        jouer(grille, N, joueur);
+        afficher(grille,N);
+    }
     return 0;
 }
