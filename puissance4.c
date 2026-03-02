@@ -123,7 +123,17 @@ int Verificationdiag2(int** grille, int joueur, int taille){
 
 /* same as aGagne in puissance4.h */
 int aGagne(int** grille, int taille){
-	for (int i=1; i<=2; i++){
-		for (int j=0; j<taille; j++)
+	for (int i=1; i<3; i++){	
+		if (Verificationdiag1(grille,i,taille)==1 || Verificationdiag2(grille,i,taille)==1){
+			return joueur;
+		}
+		else{
+			for (int j=1; j<taille; j++){
+				if (VerificationColonnes(grille,j,i,taille)==1 || VerificationColonnes(grille,j,i,taille)==1){
+					return joueur;
+				}
+			}
+		}
 	}
+	return -1;
 }
